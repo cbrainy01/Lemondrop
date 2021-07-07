@@ -1,9 +1,9 @@
 import React from 'react'
 
-function HatList() {
+function HatList({hats}) {
     return (
         <div>
-            
+            HatList Component
         </div>
     )
 }
