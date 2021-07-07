@@ -1,0 +1,81 @@
+
+{
+    "hats": [
+        
+          {
+            "id": 1,
+            "name": "Blurberry",
+            "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+            "price": 8,
+            "stock" : 13 
+          },
+          {
+            "id": 2,
+            "name": "Fendee",
+            "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+            "price": 1,
+            "stock" : 13 
+          },
+          {
+            "id": 3,
+            "name": "Pradah",
+            "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
+            "price": 3,
+            "stock" : 13 
+          },
+          {
+            "id": 4,
+            "name": "Deeyor",
+            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+            "price": 4,
+            "stock" : 13 
+          },
+          {
+            "id": 5,
+            "name": "Balanciaga",
+            "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+            "price": 1,
+            "stock" : 13 
+          }
+       
+    ], 
+  
+    "glasses":[
+      {
+        "id": 1,
+        "name": "Versese",
+        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+        "price": 1,
+        "stock" : 13 
+      },
+      {
+        "id": 2,
+        "name": "Tom Nissan",
+        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+        "price": 1,
+        "stock" : 13 
+      },
+      {
+        "id": 3,
+        "name": "Gevinchy",
+        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+        "price": 1,
+        "stock" : 13 
+      },
+      {
+        "id": 4,
+        "name": "Valentina",
+        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+        "price": 1,
+        "stock" : 13 
+      },
+      {
+        "id": 5,
+        "name": "Cartiyay",
+        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+        "price": 1,
+        "stock" : 13 
+      }
+  
+    ]
+  }
