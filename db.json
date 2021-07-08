@@ -1,81 +1,76 @@
-
 {
-    "hats": [
-        
-          {
-            "id": 1,
-            "name": "Blurberry",
-            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-            "price": 8,
-            "stock" : 19 
-          },
-          {
-            "id": 2,
-            "name": "Fendee",
-            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-            "price": 305,
-            "stock" : 13 
-          },
-          {
-            "id": 3,
-            "name": "Pradah",
-            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-            "price": 3,
-            "stock" : 13 
-          },
-          {
-            "id": 4,
-            "name": "Deeyor",
-            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-            "price": 4,
-            "stock" : 13 
-          },
-          {
-            "id": 5,
-            "name": "Balanciaga",
-            "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-            "price": 1,
-            "stock" : 13 
-          }
-       
-    ], 
-  
-    "glasses":[
-      {
-        "id": 1,
-        "name": "Versese",
-        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-        "price": 1,
-        "stock" : 13 
-      },
-      {
-        "id": 2,
-        "name": "Tom Nissan",
-        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-        "price": 415,
-        "stock" : 13 
-      },
-      {
-        "id": 3,
-        "name": "Gevinchy",
-        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-        "price": 1,
-        "stock" : 0 
-      },
-      {
-        "id": 4,
-        "name": "Valentina",
-        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-        "price": 1,
-        "stock" : 13 
-      },
-      {
-        "id": 5,
-        "name": "Cartiyay",
-        "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-        "price": 1,
-        "stock" : 13 
-      }
-  
-    ]
-  }
+  "hats": [
+    {
+      "id": 1,
+      "name": "Blurberry",
+      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+      "price": 8,
+      "stock": 19
+    },
+    {
+      "id": 2,
+      "name": "Fendee",
+      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+      "price": 305,
+      "stock": 13
+    },
+    {
+      "id": 3,
+      "name": "Pradah",
+      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+      "price": 3,
+      "stock": 13
+    },
+    {
+      "id": 4,
+      "name": "Deeyor",
+      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+      "price": 4,
+      "stock": 13
+    },
+    {
+      "id": 5,
+      "name": "Balanciaga",
+      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
+      "price": 1,
+      "stock": 13
+    }
+  ],
+  "glasses": [
+    {
+      "id": 1,
+      "name": "Versese",
+      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+      "price": 1,
+      "stock": 11
+    },
+    {
+      "id": 2,
+      "name": "Tom Nissan",
+      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+      "price": 415,
+      "stock": 13
+    },
+    {
+      "id": 3,
+      "name": "Gevinchy",
+      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+      "price": 1,
+      "stock": 0
+    },
+    {
+      "id": 4,
+      "name": "Valentina",
+      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+      "price": 1,
+      "stock": 6
+    },
+    {
+      "id": 5,
+      "name": "Cartiyay",
+      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
+      "price": 1,
+      "stock": 10
+    }
+  ]
+}
