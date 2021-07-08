@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './components/App';
+import { MoneyCountProvider } from './context/moneycount';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <Router>
-    <App />
+    <MoneyCountProvider>
+       <App />
+    </MoneyCountProvider>
   </Router>
   ,document.getElementById('root')
 );
