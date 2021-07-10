@@ -7,7 +7,8 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
     const [quantity, setQuantity] = useState(0);
     const [totalCost, setTotalCost] = useState(0);
     const [selectedOption, setSelectedOption] = useState("select quantity")
-  
+    const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
+    
     function handleChange(event) {
         const parsedValue = parseInt(event.target.value, 10)
         setSelectedOption(parsedValue)
@@ -29,7 +30,7 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
         //return options
     }
 
-    const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
+    
     console.log("MONEYLEFTINITEM: ", moneyLeft)
     /*when clicked, check to make sure item is in 
     stock(if not, use alert),

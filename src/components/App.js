@@ -41,17 +41,6 @@ function App() {
     setGlasses([...beforeItemArray, rData, ...afterItemArray]);
     })
 
-    //   const newPurchase = {
-    //     name: name,
-    //     quantity: quantity,
-    //     id: id,
-    //     totalCost: totalCost,
-    //     image: image,
-    //     price: price,
-    //     stock: stock
-    // }
-    // const purchasedGlasses = [ {}, {}, {} ]
-
     const indexOfExisting = purchasedGlasses.findIndex( (glass)=> glass.id === id )
     /*if indexofexisting === -1, then theres no preexisting glass in
      purchasedGlasses so a newlyPurchased is gonna have to be added
@@ -74,13 +63,10 @@ function App() {
         //now how do i get that modified obj as part of the array its in?
         //acess the already existing quantity and store in a variable
         const existingPrice = purchasedGlasses[indexOfExisting].totalCost
-        console.log("existingp: ", existingPrice)
-         console.log("purchasep: ", newlyPurchased.price)
         const newPrice = existingPrice + (newlyPurchased.price * purchaseQuantity)
         const existingQuantity = purchasedGlasses[indexOfExisting].quantity
         const newQuantity = existingQuantity + purchaseQuantity
         const updateQuantity = {...purchasedGlasses[indexOfExisting], quantity: newQuantity, totalCost: newPrice }
-          //const modifiedPurchasedGlasses = [...purchasedGlasses, updateQuantity]
          newPg =  purchasedGlasses.map( (purchase)=>{
             if(purchase.id === updateQuantity.id) {
               return updateQuantity
@@ -95,13 +81,14 @@ function App() {
   }
   console.log("purchasedGlasses: ", purchasedGlasses);
 
-  function handleReturnAll(itemId, returnQty) {
-    //create patch and delete request
+  function handleReturnAll(itemId, updatedStock) {
+    //create patch and then map over purchasedGlasses and excl-
+    //ude the item that was just returned
     console.log("");
 
   }
 
-  function handlePartialReturn(itemId, updatedStock, newQuantity) {
+  function handlePartialReturn(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
     fetch(`http://localhost:3004/glasses/${itemId}`, 
     {
@@ -116,17 +103,23 @@ function App() {
     const afterItemArray = glasses.slice(respIndex + 1);
     setGlasses([...beforeItemArray, rData, ...afterItemArray]);
 
-    //set purchasedglasses here with different quantity
-    const index = purchasedGlasses.findIndex( (glass)=> glass.id === itemId)
-    //purchasedGlasses[index].quantity = newQuantity
-    const change = {...purchasedGlasses[index], quantity: newQuantity}
-    const beforeChange = purchasedGlasses.slice(0, index)
-    const afterChange = purchasedGlasses.slice(index + 1)
-    console.log("index is: ", index)  
-    // console.log("change: ", change);
-    // console.log("before Change: ", beforeChange);
-    // console.log("after change: ", afterChange);
-    //setPurchasedGlasses([...beforeChange, ...change, ...afterChange ])
+    /*map over purchasedGlasses and wherever the itemId matches the purchaseId
+    set its quantity to new Quantity.
+    then set its totalCost to new totalCost
+    then set state of purchasedGlasses 
+    */
+    const pGlassesWithQtyUpdate = purchasedGlasses.map( (purchase)=> {
+      if(purchase.id === itemId) {
+        return {...purchase, quantity: newQuantity, totalCost: newtotalCost}
+      }
+      else {return purchase}
+    } )
+
+    setPurchasedGlasses(pGlassesWithQtyUpdate);
+
+    // increase moneyLeft
+    setMoneyLeft((moneyLeft)=> moneyLeft + returnAmt)
+
 
     })
   }

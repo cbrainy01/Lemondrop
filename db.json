@@ -42,14 +42,14 @@
       "name": "Versese",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 8,
-      "stock": 30
+      "stock": 70
     },
     {
       "id": 2,
       "name": "Tom Nissan",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 415,
-      "stock": null
+      "stock": 0
     },
     {
       "id": 3,

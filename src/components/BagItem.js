@@ -1,13 +1,12 @@
-import React, {useState, useContext} from 'react'
+import React, { useState } from 'react'
 import {v4 as uuid} from "uuid"
-import { MoneyContext } from '../context/moneycount'
 
 
 function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, image, stock, price}) {
    
     const [returnQty, setReturnQty] = useState(0)
     const [selectedOption, setSelectedOption] = useState("qty")
-    const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
+    //const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
     //const [qtyBought, setQtyBought] = useState(quantity)
 
     function handleChange(event) {
@@ -41,14 +40,15 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
         else {
             
             //setQtyBought( (qtyBought) => qtyBought - returnQty )
-            alert("patch glasses");
+            //alert("patch glasses");
+            const returnAmt = returnQty * price
+            //set newtotalCost value 
+            const newtotalCost = totalCost - (returnAmt)
             //set newquantity value
             const newQ = quantity - returnQty
-            const newQuantity = {
-                quantity: newQ
-            }
+           
             const updatedStock = (stock - quantity) + returnQty
-            onPartialReturn(id, updatedStock, newQuantity)
+            onPartialReturn(id, updatedStock, newQ, newtotalCost, returnAmt)
            
         }
    }
