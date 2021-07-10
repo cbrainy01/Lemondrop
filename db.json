@@ -42,7 +42,7 @@
       "name": "Versese",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 8,
-      "stock": 70
+      "stock": 65
     },
     {
       "id": 2,
@@ -70,7 +70,7 @@
       "name": "Cartiyay",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 3,
-      "stock": 40
+      "stock": 31
     }
   ]
 }

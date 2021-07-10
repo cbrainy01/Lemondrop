@@ -33,10 +33,22 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
         if(selectedOption === "qty") {
             alert("please select a return quantity");
         }
-        else if(returnQty === quantity) {
-            alert("delete this item from purchasedglasses as well as patch glasses")
 
+
+
+
+
+        else if(returnQty === quantity) {
+            const updatedStock = (stock - quantity) + returnQty
+            const returnAmt = returnQty * price
+            onReturnAll(id, updatedStock, returnAmt)
         }
+
+
+
+
+
+
         else {
             
             //setQtyBought( (qtyBought) => qtyBought - returnQty )

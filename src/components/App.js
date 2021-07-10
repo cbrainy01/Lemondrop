@@ -81,12 +81,52 @@ function App() {
   }
   console.log("purchasedGlasses: ", purchasedGlasses);
 
-  function handleReturnAll(itemId, updatedStock) {
+
+
+
+
+
+
+
+
+
+  function handleReturnAll(itemId, updatedStock, returnAmt) {
     //create patch and then map over purchasedGlasses and excl-
     //ude the item that was just returned
-    console.log("");
+    fetch(`http://localhost:3004/glasses/${itemId}`, 
+    {
+      method: "PATCH",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({"stock": updatedStock})
+    })
+    .then( (r)=>r.json() )
+    .then( (rData) => {
+    const respIndex = glasses.findIndex( (glass) => glass.id === rData.id );
+    const beforeItemArray = glasses.slice(0, respIndex);
+    const afterItemArray = glasses.slice(respIndex + 1);
+    setGlasses([...beforeItemArray, rData, ...afterItemArray]);
 
+    //if purchasedGlasses' id matches with the itemId, delete that purchase
+    //then set purchasedGlasses
+    const pGlassesExcludingReturned = purchasedGlasses.filter( (purchase) => {
+      return purchase.id !== itemId;
+    } )
+
+      setPurchasedGlasses(pGlassesExcludingReturned)
+    })
+    //increase moneyLeft
+    setMoneyLeft((moneyLeft)=> moneyLeft + returnAmt)
   }
+  
+
+
+
+
+
+
+
+
+
 
   function handlePartialReturn(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
