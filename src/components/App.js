@@ -13,6 +13,7 @@ function App() {
   const [purchasedHats, setPurchasedHats] = useState([]);
   const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
   
+  console.log("hats is: ", hats);
   useEffect( ()=> {
     fetch("http://localhost:3004/hats")
     .then((response)=>response.json() )
@@ -256,23 +257,7 @@ function App() {
     setMoneyLeft((moneyLeft)=> moneyLeft + returnAmt)
     })
   }
-
-  function handleHatSort(sortType) {
-    if(sortType === "hilo") {
-      //sort by price, hi to lo then set hats to sorted
-    }
-    else if(sortType === "hilo") {
-      //sort by price, lo to hi then set hats to sorted
-    }
-    else if(sortType === "A-Z") {
-      //sort by name, a-z then set hats to sorted
-    }
-    else if(sortType === "Z-A") {
-      //sort by name, z-a then set hats to sorted
-    }
-    else{//set hats to hats
-    }
-  }
+  
 
 
   return (
@@ -281,7 +266,7 @@ function App() {
       <Navbar/>
       <Switch>
         <Route path="/shop">
-          <Shop onHatSort={handleHatSort} onGlassPurchase={handleGlassPurchase} onHatPurchase={handleHatPurchase} hats={hats} glasses={glasses}/>
+          <Shop onGlassPurchase={handleGlassPurchase} onHatPurchase={handleHatPurchase} hats={hats} glasses={glasses}/>
         </Route>
         <Route exact path="/bag"><div><Bag 
         onReturnAll={handleReturnAll} onReturnAllHats={handleReturnAllHats}
