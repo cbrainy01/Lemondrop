@@ -39,10 +39,10 @@
   "glasses": [
     {
       "id": 1,
-      "name": "Versese",
+      "name": "Versachee",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 8,
-      "stock": 65
+      "stock": 61
     },
     {
       "id": 2,

@@ -12,7 +12,7 @@ function GlassesList({glasses, onGlassPurchase}) {
                    stock={glass.stock}
                    id = {glass.id}
                    onGlassPurchase={onGlassPurchase}
-         />
+                 />
     } );
     
     return (

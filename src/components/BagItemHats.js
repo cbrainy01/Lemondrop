@@ -1,21 +1,18 @@
 import React, { useState } from 'react'
 import {v4 as uuid} from "uuid"
 
-
-function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, image, stock, price}) {
-   
+function BagItemHats({onReturnAllHats, onPartialReturnHats, name, quantity, id, totalCost, image, stock, price}) {
+    
     const [returnQty, setReturnQty] = useState(0)
     const [selectedOption, setSelectedOption] = useState("qty")
-    //const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
-    //const [qtyBought, setQtyBought] = useState(quantity)
-
+    
     function handleChange(event) {
         const parsedValue = parseInt(event.target.value, 10)
         setReturnQty(parsedValue)
         setSelectedOption(event.target.value)
 
     }
-
+    
     function optionDropdown() {
         const options = [];
         for(let i = 1; i <= quantity; i++) {
@@ -26,8 +23,8 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
         } )
         return renderOptions;
     }
-    //create patch to change stock count of item
-   function handleClick() {
+
+    function handleClick() {
         if(selectedOption === "qty") {
             alert("please select a return quantity");
         }
@@ -35,7 +32,7 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
         else if(returnQty === quantity) {
             const updatedStock = (stock - quantity) + returnQty
             const returnAmt = returnQty * price
-            onReturnAll(id, updatedStock, returnAmt)
+            onReturnAllHats(id, updatedStock, returnAmt)
         }
 
         else {
@@ -49,11 +46,14 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
             const newQ = quantity - returnQty
            
             const updatedStock = (stock - quantity) + returnQty
-            onPartialReturn(id, updatedStock, newQ, newtotalCost, returnAmt)
+            onPartialReturnHats(id, updatedStock, newQ, newtotalCost, returnAmt)
            
         }
    }
    
+
+
+
     return (
         <div>
             <h3>name: {name}</h3>
@@ -72,4 +72,4 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
     )
 }
 
-export default BagItem
+export default BagItemHats
