@@ -41,36 +41,36 @@
       "id": 1,
       "name": "Versese",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 1,
-      "stock": 11
+      "price": 8,
+      "stock": 30
     },
     {
       "id": 2,
       "name": "Tom Nissan",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
       "price": 415,
-      "stock": 13
+      "stock": null
     },
     {
       "id": 3,
       "name": "Gevinchy",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 1,
-      "stock": 0
+      "price": 6,
+      "stock": 46
     },
     {
       "id": 4,
       "name": "Valentina",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 1,
-      "stock": 6
+      "price": 5,
+      "stock": 58
     },
     {
       "id": 5,
       "name": "Cartiyay",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 1,
-      "stock": 10
+      "price": 3,
+      "stock": 40
     }
   ]
 }

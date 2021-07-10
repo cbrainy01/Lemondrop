@@ -17,7 +17,7 @@ function GlassesList({glasses, onGlassPurchase}) {
     
     return (
         <div>
-            glasseslist component
+            GLASSES COMPONENT
             {renderGlasses}
         </div>
     )

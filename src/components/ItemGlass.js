@@ -14,9 +14,7 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
         setQuantity(parsedValue);
         setTotalCost(parsedValue * price);
     }
- console.log("stock is: ", stock);
- console.log("quantity is: ", quantity);
- console.log("total cost is: ", totalCost);
+ 
 
     function optionDropdown() {
         const options = [];
@@ -51,7 +49,7 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
             //thisll require passing id and updated stock count up
            const updatedStock = stock - quantity
             //deduct totalCost from moneyLeft
-            //setMoneyLeft((moneyLeft)=> moneyLeft - totalCost)
+            setMoneyLeft((moneyLeft)=> moneyLeft - totalCost)
             //add item/items to bag
             const newPurchase = {
                 name: name,
@@ -59,9 +57,10 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
                 id: id,
                 totalCost: totalCost,
                 image: image,
-                price: price
+                price: price,
+                stock: stock
             }
-            onGlassPurchase(id, updatedStock, newPurchase);
+            onGlassPurchase(id, updatedStock, newPurchase, quantity, );
         }
     }
 
