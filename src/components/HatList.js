@@ -69,7 +69,6 @@ function HatList({hats, onHatPurchase}) {
         <div>
             
             HAT COMPONENT
-            <label>Sort by:</label>
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
                 <option value="A-Z">Name(A-Z)</option>
