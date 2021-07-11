@@ -31,7 +31,6 @@ function ItemGlass({name, image, price, stock, id, onGlassPurchase}) {
     }
 
     
-    console.log("MONEYLEFTINITEM: ", moneyLeft)
     /*when clicked, check to make sure item is in 
     stock(if not, use alert),
      before allowing purchase to go through*/

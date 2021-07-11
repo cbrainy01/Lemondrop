@@ -5,7 +5,6 @@ import {v4 as uuid} from "uuid"
 function HatList({hats, onHatPurchase, onHatSearch}) {
 
     const [sortType, setSortType] = useState("All");
-    const [searchValue, setSearchValue] = useState("");
 
     function hatSort() {
         if(sortType === "All") {
@@ -46,14 +45,6 @@ function HatList({hats, onHatPurchase, onHatSearch}) {
         }
         else{alert("error")}
     }
-
-    // function searchFilter() {
-    //         const filtered = hats.filter( (hat)=> {
-    //         if(searchValue === "") {return hat}
-    //         else if( hat.name.toLowerCase().includes(searchValue.toLowerCase()) ) {return hat }
-    //         }  )
-    //         return filtered;
-    // }
 
     const renderHats = hatSort().map( (hat)=>{
         return <ItemHat key={uuid()} 

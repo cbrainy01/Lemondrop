@@ -8,18 +8,31 @@ import { NavLink } from 'react-router-dom'
 
 function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
     //split screen with half being a link to hats and other half being link to glasses
-    const [searchValue, setSearchValue] = useState("")
+    const [searchValueHats, setSearchValueHats] = useState("")
+    const [searchValueGlasses, setSearchValueGlasses] = useState("")
 
     function filterHats() {
         const filtered = hats.filter( (hat)=> {
-            if(searchValue === "") {return hat}
-            else if( hat.name.toLowerCase().includes(searchValue.toLowerCase()) ) {return hat }
+            if(searchValueHats === "") {return hat}
+            else if( hat.name.toLowerCase().includes(searchValueHats.toLowerCase()) ) {return hat }
             }  )
             return filtered;
     }
 
     function handleHatSearch(userInput) {
-        setSearchValue(userInput)
+        setSearchValueHats(userInput)
+    }
+
+    function handleGlassesSearch(userInput) {
+        setSearchValueGlasses(userInput)
+    }
+
+    function filterGlasses() {
+        const filtered = glasses.filter( (glass)=> {
+            if(searchValueGlasses === "") {return glass}
+            else if( glass.name.toLowerCase().includes(searchValueGlasses.toLowerCase()) ) {return glass }
+            }  )
+            return filtered;
     }
 
    const match = useRouteMatch();
@@ -31,7 +44,7 @@ function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
                 <HatList onHatSearch={handleHatSearch} onHatPurchase={onHatPurchase} hats={filterHats()}/>
            </Route>
            <Route exact path={`${match.url}/glasses`}>
-                <GlassesList onGlassPurchase={onGlassPurchase} glasses={glasses}/>
+                <GlassesList onGlassesSearch={handleGlassesSearch} onGlassPurchase={onGlassPurchase} glasses={filterGlasses()}/>
            </Route>
         </div>
     )
@@ -39,6 +52,3 @@ function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
 
 export default Shop
 
-//<NavLink to={`${match.url}/glasses`>Shop Glasses </NavLink>
-//<NavLink to={`${match.url}/hats`}>Shop Hats</NavLink>
-//<NavLink to="/shop/hats">test</NavLink>

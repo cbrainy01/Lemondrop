@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ItemGlass from './ItemGlass';
 import {v4 as uuid} from "uuid"
 
-function GlassesList({glasses, onGlassPurchase}) {
+function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
     
     const [sortType, setSortType] = useState("All")
 
@@ -63,7 +63,7 @@ function GlassesList({glasses, onGlassPurchase}) {
     return (
         <div>
             GLASSES COMPONENT
-            {/* <create search bar> */}
+            <input onChange={(e) => onGlassesSearch(e.target.value) } type="text" placeholder="Search item..."/>
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
                 <option value="A-Z">Name(A-Z)</option>
