@@ -13,6 +13,7 @@ function App() {
   const [purchasedHats, setPurchasedHats] = useState([]);
   const [moneyLeft, setMoneyLeft] = useContext(MoneyContext)
   
+  
   console.log("hats is: ", hats);
   useEffect( ()=> {
     fetch("http://localhost:3004/hats")
@@ -257,6 +258,8 @@ function App() {
     setMoneyLeft((moneyLeft)=> moneyLeft + returnAmt)
     })
   }
+
+
   
 
 

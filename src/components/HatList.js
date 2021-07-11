@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import ItemHat from './ItemHat'
 import {v4 as uuid} from "uuid"
 
-function HatList({hats, onHatPurchase}) {
+function HatList({hats, onHatPurchase, onHatSearch}) {
 
-    const [sortType, setSortType] = useState("All")
+    const [sortType, setSortType] = useState("All");
+    const [searchValue, setSearchValue] = useState("");
 
     function hatSort() {
         if(sortType === "All") {
@@ -46,7 +47,13 @@ function HatList({hats, onHatPurchase}) {
         else{alert("error")}
     }
 
-
+    // function searchFilter() {
+    //         const filtered = hats.filter( (hat)=> {
+    //         if(searchValue === "") {return hat}
+    //         else if( hat.name.toLowerCase().includes(searchValue.toLowerCase()) ) {return hat }
+    //         }  )
+    //         return filtered;
+    // }
 
     const renderHats = hatSort().map( (hat)=>{
         return <ItemHat key={uuid()} 
@@ -59,16 +66,18 @@ function HatList({hats, onHatPurchase}) {
                 />
     } ) 
 
+
     function handleChange(e) {
         setSortType(e.target.value);
     }
 
-   
+  
 
     return (
         <div>
             
             HAT COMPONENT
+            <input onChange={(e) => onHatSearch(e.target.value) } type="text" placeholder="Search item..."/>
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
                 <option value="A-Z">Name(A-Z)</option>

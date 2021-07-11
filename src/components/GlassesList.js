@@ -63,6 +63,7 @@ function GlassesList({glasses, onGlassPurchase}) {
     return (
         <div>
             GLASSES COMPONENT
+            {/* <create search bar> */}
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
                 <option value="A-Z">Name(A-Z)</option>
