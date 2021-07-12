@@ -4,7 +4,7 @@ import { Route } from "react-router-dom"
 import GlassesList from './GlassesList';
 import HatList from './HatList';
 import { NavLink } from 'react-router-dom'
-
+import "./splitscreen.css"
 
 function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
     //split screen with half being a link to hats and other half being link to glasses
@@ -38,8 +38,13 @@ function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
    const match = useRouteMatch();
     return (
         <div>
-            <NavLink to="/shop/hats">hat section</NavLink>
-            <NavLink to={`${match.url}/glasses`}>glasses section</NavLink>
+            {/* style the navlinks */}
+            <div className="container">
+                <section className="hats"><NavLink to="/shop/hats">Shop Hats</NavLink></section>
+                <section className="glasses"><NavLink to={`${match.url}/glasses`}>Shop Glasses</NavLink></section>
+            </div>
+               
+          
            <Route path={'/shop/hats'}>
                 <HatList onHatSearch={handleHatSearch} onHatPurchase={onHatPurchase} hats={filterHats()}/>
            </Route>

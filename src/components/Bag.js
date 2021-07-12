@@ -2,6 +2,7 @@ import React from 'react'
 import BagItem from './BagItem'
 import {v4 as uuid} from "uuid"
 import BagItemHats from './BagItemHats'
+import "./shopitems.css"
 
 function Bag({ onReturnAll,
             onPartialReturn,
@@ -43,11 +44,18 @@ function Bag({ onReturnAll,
 
     return (
         <div>
-            Bag component
-            {renderGlassesPurchases}
-            {renderHatsPurchases}
+            <h1 className="headerbag">Your Purchases</h1>
+            {/* <div className="shopcontainer"> */}
+              
+            {/* </div> */}
+              
+            <div>
+              {renderHatsPurchases}
+              {renderGlassesPurchases}
+            </div>
         </div>
     )
 }
 
 export default Bag
+// className="shopcontainer"

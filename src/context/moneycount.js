@@ -4,7 +4,7 @@ const MoneyContext = createContext();
 
 function MoneyCountProvider({ children }) {
 
-    const [moneyLeft, setMoneyLeft] = useState(300)
+    const [moneyLeft, setMoneyLeft] = useState(711)
     const value = [moneyLeft, setMoneyLeft]
     console.log("Moneyleft in context: ", moneyLeft);
     return(

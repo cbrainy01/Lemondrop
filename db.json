@@ -2,75 +2,138 @@
   "hats": [
     {
       "id": 1,
-      "name": "Blurberry",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "price": 8,
-      "stock": 19
+      "name": "Blurberry baseball cap",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl7BfD7vKbJvopF1ReSIVk4_bbjGFg2xYjOQ&usqp=CAU",
+      "price": 215,
+      "stock": 4
     },
     {
       "id": 2,
-      "name": "Fendee",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "price": 305,
-      "stock": 13
+      "name": "Fendee basebal cap",
+      "image": "https://img.zolaprod.babsta.net/UhRFwLla8N2fm8xdOre8wP0ZYpM=/500x500/df36d46991a74e43a76b7fcc482ca0c0/product.FEN4D29WMULLLLLL00.NBG",
+      "price": 25,
+      "stock": 12
     },
     {
       "id": 3,
-      "name": "Pradah",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "price": 3,
-      "stock": 13
+      "name": "Fendee bucket hat",
+      "image": "https://cdn-images.farfetch-contents.com/14/04/59/31/14045931_18385774_1000.jpg",
+      "price": 305,
+      "stock": 2
     },
     {
       "id": 4,
-      "name": "Deeyor",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "price": 4,
-      "stock": 13
+      "name": "Pradah bucket hat",
+      "image": "https://cdna.lystit.com/1200/630/tr/photos/mrporter/29c02930/prada-yellow-Logo-appliqued-Nylon-Bucket-Hat.jpeg",
+      "price": 65,
+      "stock": 9
     },
     {
       "id": 5,
-      "name": "Balanciaga",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "price": 1,
-      "stock": 13
+      "name": "Pradah nylon beenie",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP559zVU7GHzQMq3-mpJtdpytixAQL2wSioQ&usqp=CAU",
+      "price": 99,
+      "stock": 6
+    },
+    {
+      "id": 6,
+      "name": "Balanciaga jaque beenie",
+      "image": "https://balenciaga.dam.kering.com/m/54246c9cf336ef18/Thumbnail-555277T14711262_F.jpg?v=1",
+      "price": 70,
+      "stock": 27
+    },
+    {
+      "id": 7,
+      "name": "Balanciaga bucket hat",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkETjyobxe2piqVPwSXyGRzza-D1RolNOEA&usqp=CAU",
+      "price": 140,
+      "stock": 8
+    },
+    {
+      "id": 8,
+      "name": "Pradah basebal cap",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgEKqK9ctI_Xq5MzOgQfOc0IBRpSeGXMbSWA&usqp=CAU",
+      "price": 35,
+      "stock": 18
+    },
+    {
+      "id": 9,
+      "name": "Deeyor bucket hat",
+      "image": "https://i.pinimg.com/736x/b2/3f/e0/b23fe013fb7f7405e04437de86baec9b.jpg",
+      "price": 80,
+      "stock": 22
     }
   ],
   "glasses": [
     {
       "id": 1,
-      "name": "Versachee",
-      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 8,
-      "stock": 61
+      "name": "Versachee Pilot glasses",
+      "image": "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwbbfe03e6/original/90_O2209-O10098758_ONUL_20_LogomaniaPilotSunglasses-Eyewear-versace-online-store_4_7.jpg?sw=450&sh=632&sm=fit&sfrm=jpg",
+      "price": 95,
+      "stock": 42
     },
     {
       "id": 2,
-      "name": "Tom Nissan",
-      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 415,
-      "stock": 0
+      "name": "Versachee Greca glasses",
+      "image": "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7894e9dd/rollover/90_O4403-O3148757_ONUL_22_GrecaSunglasses-Eyewear-versace-online-store_0_3.jpg?sw=450&sh=632&sm=fit&sfrm=jpg",
+      "price": 1200,
+      "stock": 5
     },
     {
       "id": 3,
-      "name": "Gevinchy",
-      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 6,
-      "stock": 46
+      "name": "Tom Nissan Neuman glasses",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzPQ6Q58Seq8rmt-HIEA_bp1SxobbWv2G3g&usqp=CAU",
+      "price": 415,
+      "stock": 7
     },
     {
       "id": 4,
-      "name": "Valentina",
-      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 5,
-      "stock": 58
+      "name": "Tom Nissan Sybil glasses",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIsYFwaxMMSA6cE7TFjE7mB-9_10a3LbyDkQ&usqp=CAU",
+      "price": 65,
+      "stock": 0
     },
     {
       "id": 5,
-      "name": "Cartiyay",
-      "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "price": 3,
+      "name": "Gevinchy Quad-fold glasses ",
+      "image": "https://www.givenchy.com/dw/image/v2/BBRT_PRD/on/demandware.static/-/Sites-Givenchy_master/default/dw39e76fa2/images/BR0053R03A650/BR0053R03A650-01-01.jpg?sw=466",
+      "price": 100,
+      "stock": 40
+    },
+    {
+      "id": 6,
+      "name": "Gevinchy Amina glasses ",
+      "image": "https://www.givenchy.com/dw/image/v2/BBRT_PRD/on/demandware.static/-/Sites-Givenchy_master/default/dwd75a139a/images/BR003WR02D623/BR003WR02D623-01-01.jpg?sw=466",
+      "price": 115,
+      "stock": 20
+    },
+    {
+      "id": 7,
+      "name": "Valentina Bordeau glasses",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcStqY-8kIkcq6ZmL70IUXrNWP0k8zon6rK5vjt6rKClH4nXLEnOZVfIZRScgkbdtI_id0kKAxCVa4kEvp-9EwvhnZpS7rXEZvUi4mV2Pem1YiAdDFvhu1xR&usqp=CAE",
+      "price": 65,
+      "stock": 13
+    },
+    {
+      "id": 8,
+      "name": "Valentina VS glasses",
+      "image": "https://www.fashioneyewear.com/media/catalog/product/cache/cdf220f01d68ac5f5be722b0cc70a19a/l/u/luxbs0va2013__300271_030a.jpg",
+      "price": 130,
+      "stock": 57
+    },
+    {
+      "id": 9,
+      "name": "Panther de Cartiyay glasses",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkXrzUGRSHcvEaZnz8Wv3KJKig2q8s_LjSjA&usqp=CAU",
+      "price": 90,
       "stock": 31
+    },
+    {
+      "id": 10,
+      "name": "Santo de Cartiyay glasses",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFHOUkgI_3NvwQhME8TxxTTpNZ6INqPydpg&usqp=CAU",
+      "price": 55,
+      "stock": 15
     }
   ]
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ItemGlass from './ItemGlass';
 import {v4 as uuid} from "uuid"
+import "./shopitems.css"
 
 function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
     
@@ -46,14 +47,14 @@ function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
     }
 
     const renderGlasses = glassesSort().map( (glass)=> {
-       return <ItemGlass key={uuid()}
+       return (<ItemGlass key={uuid()}
                    name={glass.name} 
                    image={glass.image}
                    price={glass.price}
                    stock={glass.stock}
                    id = {glass.id}
                    onGlassPurchase={onGlassPurchase}
-                 />
+                 />)
     } );
     
     function handleChange(e) {
@@ -62,7 +63,8 @@ function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
 
     return (
         <div>
-            GLASSES COMPONENT
+            <h1 className="header">Glasses</h1>
+            <br/>
             <input onChange={(e) => onGlassesSearch(e.target.value) } type="text" placeholder="Search item..."/>
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
@@ -71,7 +73,9 @@ function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
                 <option value="hilo">Price(high-low)</option>
                 <option value="lohi">Price(low-high)</option>
             </select>
-            {renderGlasses}
+            <div className="shopcontainer">
+              {renderGlasses}
+            </div>
         </div>
     )
 }

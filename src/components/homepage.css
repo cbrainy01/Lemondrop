@@ -1,0 +1,23 @@
+.fullscreenDiv {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 85%;
+    bottom: 0px;
+    /* top: 0px; */
+    left: 0;
+    position: absolute;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nfliXY0D1g-srD0CMjNeE-9_xKcWWvBMXYalCNLz6vNqJv16yRl6AtDMT7R2qkylvyA&usqp=CAU");
+
+}
+.center {
+    /* position: absolute;  */
+    /* border: 1px solid blue;  */
+    /* width: 100px; */
+    height: 50px;
+    /* top: 50%; */
+    /* left: 50%; */
+    margin-top: 15%;
+    margin-left: 13%;
+    font-size: 2.3em; 
+    opacity: 0.85;
+}  

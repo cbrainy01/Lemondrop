@@ -1,9 +1,12 @@
 import React, {useState, useEffect, useContext} from "react"
 import { Route, Switch } from "react-router-dom"
-import Navbar from "./Navbar";
+import NavbarComp from "./NavbarComp";
 import Shop from "./Shop";
 import Bag from "./Bag";
+import Home from "./Home";
 import { MoneyContext } from '../context/moneycount'
+import "./moneyleft.css"
+
 
 function App() {
 
@@ -265,8 +268,7 @@ function App() {
 
   return (
     <div>
-      Money left: {moneyLeft}
-      <Navbar/>
+      <NavbarComp/>
       <Switch>
         <Route path="/shop">
           <Shop onGlassPurchase={handleGlassPurchase} onHatPurchase={handleHatPurchase} hats={hats} glasses={glasses}/>
@@ -277,7 +279,7 @@ function App() {
         purchasedGlasses={purchasedGlasses} purchasedHats={purchasedHats}/>
         </div></Route>
         <Route path="/" exact>
-          <div>Home component</div>
+          <div><Home/></div>
         </Route>
       </Switch>
     </div>

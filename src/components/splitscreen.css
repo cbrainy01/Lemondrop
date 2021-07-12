@@ -1,0 +1,33 @@
+.container {
+    /* height: 90vh; */
+    display: flex;
+}
+
+section {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+section NavLink {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 12px 32px;
+}
+
+.hats {
+    background-color: yellow;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+}
+
+.glasses {
+    background-color:yellow;
+    /* background-size: cover; */
+    /* background-blend-mode: multiply; */
+    margin-left: 350px;
+}

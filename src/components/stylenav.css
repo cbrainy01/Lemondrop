@@ -1,0 +1,28 @@
+.bigDiv{
+   /* margin-left: 40%; */
+    display: flex;
+    background-color: black;
+   /* padding-left: 15px; */
+    /* font-size: 3.5em; */
+}
+
+.bigDiv h1 {
+    padding-top: 10px;
+    color: yellow;
+}
+
+.main-nav {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(255, 255, 139);
+    font-size: 2.3em;
+}
+
+.baggie {
+    padding-top: 10px;
+    padding-left: 11em;
+    padding-right: 15px;
+    color: rgb(255, 255, 139);
+    font-size: 2.3em;
+}

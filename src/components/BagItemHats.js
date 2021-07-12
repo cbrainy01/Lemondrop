@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {v4 as uuid} from "uuid"
+import "./shopitems.css"
 
 function BagItemHats({onReturnAllHats, onPartialReturnHats, name, quantity, id, totalCost, image, stock, price}) {
     
@@ -55,7 +56,7 @@ function BagItemHats({onReturnAllHats, onPartialReturnHats, name, quantity, id, 
 
 
     return (
-        <div>
+        <div className="cart">
             <h3>name: {name}</h3>
             <img src={image} alt=""/>
             <p>quantity bought: {quantity}</p>

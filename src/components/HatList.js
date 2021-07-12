@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ItemHat from './ItemHat'
 import {v4 as uuid} from "uuid"
+import "./shopitems.css"
 
 function HatList({hats, onHatPurchase, onHatSearch}) {
 
@@ -67,7 +68,7 @@ function HatList({hats, onHatPurchase, onHatSearch}) {
     return (
         <div>
             
-            HAT COMPONENT
+            <h1 className="header" >Hats</h1> <br/>
             <input onChange={(e) => onHatSearch(e.target.value) } type="text" placeholder="Search item..."/>
             <select name="hatsort" onChange={handleChange}>
                 <option value="All">Sortby</option>
@@ -76,7 +77,8 @@ function HatList({hats, onHatPurchase, onHatSearch}) {
                 <option value="hilo">Price(high-low)</option>
                 <option value="lohi">Price(low-high)</option>
             </select>
-            {renderHats}
+            <div className="shopcontainer">{renderHats}</div>
+            
         </div>
     )
 }

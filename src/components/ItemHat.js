@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { MoneyContext } from '../context/moneycount'
 import {v4 as uuid} from "uuid"
+import "./shopitems.css"
 
 function ItemHat({name, image, price, stock, id, onHatPurchase}) {
     
@@ -58,17 +59,17 @@ function ItemHat({name, image, price, stock, id, onHatPurchase}) {
     }
 
     return (
-        <div>
+        <div className="cart">
             <h3>{name}</h3>
             <img src={image} alt={name}/>
-            <p>{stock} in stock</p>
-            <p>{price}$</p>
-            <label>qty: </label>
+            <h5>{stock} in stock</h5>
+            <label></label>
             <select name="quantity" value={selectedOption} onChange={handleChange}>
-                <option>select quantity</option>
+                <option>select qty</option>
                 {optionDropdown()}
             </select>
             <br></br>
+            <h5>{price}$</h5>
             <button onClick={handleClick}>Add to bag</button>
         </div>
     )

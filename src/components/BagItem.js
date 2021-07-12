@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {v4 as uuid} from "uuid"
-
+import "./shopitems.css"
 
 function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, image, stock, price}) {
    
@@ -55,13 +55,12 @@ function BagItem({onReturnAll, onPartialReturn, name, quantity, id, totalCost, i
    }
    
     return (
-        <div>
-            <h3>name: {name}</h3>
+        <div className="cart">
+            <h3>{name}</h3>
             <img src={image} alt=""/>
             <p>quantity bought: {quantity}</p>
             <p>total cost: {totalCost} </p>
 
-            {/* {dropdown with quantity bought} */}
             <select name="return" value={returnQty} onChange={handleChange}>
                 <option value="qty">qty</option>
                 {optionDropdown()}
