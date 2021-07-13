@@ -5,7 +5,7 @@
       "name": "Blurberry baseball cap",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl7BfD7vKbJvopF1ReSIVk4_bbjGFg2xYjOQ&usqp=CAU",
       "price": 215,
-      "stock": 4
+      "stock": 3
     },
     {
       "id": 2,
@@ -40,7 +40,7 @@
       "name": "Balanciaga jaque beenie",
       "image": "https://balenciaga.dam.kering.com/m/54246c9cf336ef18/Thumbnail-555277T14711262_F.jpg?v=1",
       "price": 70,
-      "stock": 27
+      "stock": 26
     },
     {
       "id": 7,
@@ -70,7 +70,7 @@
       "name": "Versachee Pilot glasses",
       "image": "https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwbbfe03e6/original/90_O2209-O10098758_ONUL_20_LogomaniaPilotSunglasses-Eyewear-versace-online-store_4_7.jpg?sw=450&sh=632&sm=fit&sfrm=jpg",
       "price": 95,
-      "stock": 42
+      "stock": 41
     },
     {
       "id": 2,
@@ -105,14 +105,14 @@
       "name": "Gevinchy Amina glasses ",
       "image": "https://www.givenchy.com/dw/image/v2/BBRT_PRD/on/demandware.static/-/Sites-Givenchy_master/default/dwd75a139a/images/BR003WR02D623/BR003WR02D623-01-01.jpg?sw=466",
       "price": 115,
-      "stock": 20
+      "stock": 16
     },
     {
       "id": 7,
       "name": "Valentina Bordeau glasses",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcStqY-8kIkcq6ZmL70IUXrNWP0k8zon6rK5vjt6rKClH4nXLEnOZVfIZRScgkbdtI_id0kKAxCVa4kEvp-9EwvhnZpS7rXEZvUi4mV2Pem1YiAdDFvhu1xR&usqp=CAE",
       "price": 65,
-      "stock": 13
+      "stock": 12
     },
     {
       "id": 8,
@@ -133,7 +133,7 @@
       "name": "Santo de Cartiyay glasses",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDFHOUkgI_3NvwQhME8TxxTTpNZ6INqPydpg&usqp=CAU",
       "price": 55,
-      "stock": 15
+      "stock": 10
     }
   ]
 }
