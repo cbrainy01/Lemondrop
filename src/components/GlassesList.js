@@ -52,7 +52,7 @@ function GlassesList({glasses, onGlassPurchase, onGlassesSearch}) {
                    image={glass.image}
                    price={glass.price}
                    stock={glass.stock}
-                   id = {glass.id}
+                   id={glass.id}
                    onGlassPurchase={onGlassPurchase}
                  />)
     } );

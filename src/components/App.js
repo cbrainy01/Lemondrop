@@ -6,6 +6,7 @@ import Bag from "./Bag";
 import Home from "./Home";
 import { MoneyContext } from '../context/moneycount'
 import "./moneyleft.css"
+/* eslint-disable */
 
 
 function App() {
