@@ -19,13 +19,13 @@ function App() {
   
   console.log("hats is: ", hats);
   useEffect( ()=> {
-    fetch("http://localhost:3004/hats")
+    fetch("https://desolate-harbor-77474.herokuapp.com/hats")
     .then((response)=>response.json() )
     .then( (responseData)=>setHats(responseData) )
     .catch((error)=>console.log(error));
   }, [] )
   useEffect( ()=> {
-    fetch("http://localhost:3004/glasses")
+    fetch("https://desolate-harbor-77474.herokuapp.com/glasses")
     .then((response)=>response.json() )
     .then( (responseData)=>setGlasses(responseData) )
     .catch((error)=>console.log(error));
@@ -33,7 +33,7 @@ function App() {
 
   function handleGlassPurchase(id, updatedStock, newlyPurchased, purchaseQuantity, purchasePrice) {
     console.log("updated stock: ", updatedStock)
-    fetch(`http://localhost:3004/glasses/${id}`, 
+    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${id}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -90,7 +90,7 @@ function App() {
   function handleReturnAll(itemId, updatedStock, returnAmt) {
     //create patch and then map over purchasedGlasses and excl-
     //ude the item that was just returned
-    fetch(`http://localhost:3004/glasses/${itemId}`, 
+    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -118,7 +118,7 @@ function App() {
   
   function handlePartialReturn(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
-    fetch(`http://localhost:3004/glasses/${itemId}`, 
+    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -203,7 +203,7 @@ function App() {
   function handleReturnAllHats(itemId, updatedStock, returnAmt) {
     //create patch and then map over purchasedGlasses and excl-
     //ude the item that was just returned
-    fetch(`http://localhost:3004/hats/${itemId}`, 
+    fetch(`https://desolate-harbor-77474.herokuapp.com/hats/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -231,7 +231,7 @@ function App() {
 
   function handlePartialReturnHats(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
-    fetch(`http://localhost:3004/hats/${itemId}`, 
+    fetch(`https://desolate-harbor-77474.herokuapp.com/hats/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},

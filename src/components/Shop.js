@@ -12,11 +12,13 @@ function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
     const [searchValueGlasses, setSearchValueGlasses] = useState("")
 
     function filterHats() {
-        const filtered = hats.filter( (hat)=> {
-            if(searchValueHats === "") {return hat}
-            else if( hat.name.toLowerCase().includes(searchValueHats.toLowerCase()) ) {return hat }
+        // const filtered = hats.filter( (hat)=> {
+        return hats.filter( (hat)=> {
+            if(searchValueHats === "") {return true}
+            else if( hat.name.toLowerCase().includes(searchValueHats.toLowerCase()) ) {return true }
+            else {return false}
             }  )
-            return filtered;
+            // return filtered;
     }
 
     function handleHatSearch(userInput) {
@@ -28,11 +30,13 @@ function Shop({ hats, glasses, onGlassPurchase, onHatPurchase}) {
     }
 
     function filterGlasses() {
-        const filtered = glasses.filter( (glass)=> {
-            if(searchValueGlasses === "") {return glass}
-            else if( glass.name.toLowerCase().includes(searchValueGlasses.toLowerCase()) ) {return glass }
+        // const filtered = glasses.filter( (glass)=> {
+        return glasses.filter( (glass)=> {
+            if( glass.name.toLowerCase().includes(searchValueGlasses.toLowerCase()) ) {return true }
+            else if(searchValueGlasses === "") {return true}
+            else return false
             }  )
-            return filtered;
+            // return filtered;
     }
 
    const match = useRouteMatch();
