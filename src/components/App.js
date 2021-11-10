@@ -20,13 +20,13 @@ function App() {
   
   console.log("hats is: ", hats);
   useEffect( ()=> {
-    fetch("https://desolate-harbor-77474.herokuapp.com/hats")
+    fetch("https://lemondrop-backend.herokuapp.com/hats")
     .then((response)=>response.json() )
     .then( (responseData)=>setHats(responseData) )
     .catch((error)=>console.log(error));
   }, [] )
   useEffect( ()=> {
-    fetch("https://desolate-harbor-77474.herokuapp.com/glasses")
+    fetch("https://lemondrop-backend.herokuapp.com/glasses")
     .then((response)=>response.json() )
     .then( (responseData)=>setGlasses(responseData) )
     .catch((error)=>console.log(error));
@@ -34,7 +34,7 @@ function App() {
 
   function handleGlassPurchase(id, updatedStock, newlyPurchased, purchaseQuantity, purchasePrice) {
     console.log("updated stock: ", updatedStock)
-    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${id}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/glasses/${id}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -91,7 +91,7 @@ function App() {
   function handleReturnAll(itemId, updatedStock, returnAmt) {
     //create patch and then map over purchasedGlasses and excl-
     //ude the item that was just returned
-    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${itemId}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/glasses/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -119,7 +119,7 @@ function App() {
   
   function handlePartialReturn(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
-    fetch(`https://desolate-harbor-77474.herokuapp.com/glasses/${itemId}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/glasses/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -151,7 +151,7 @@ function App() {
   }
 
   function handleHatPurchase(id, updatedStock, newlyPurchased, purchaseQuantity) {
-    fetch(`http://localhost:3004/hats/${id}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/hats/${id}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -204,7 +204,7 @@ function App() {
   function handleReturnAllHats(itemId, updatedStock, returnAmt) {
     //create patch and then map over purchasedGlasses and excl-
     //ude the item that was just returned
-    fetch(`https://desolate-harbor-77474.herokuapp.com/hats/${itemId}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/hats/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
@@ -232,7 +232,7 @@ function App() {
 
   function handlePartialReturnHats(itemId, updatedStock, newQuantity, newtotalCost, returnAmt) {
     //patch request only
-    fetch(`https://desolate-harbor-77474.herokuapp.com/hats/${itemId}`, 
+    fetch(`https://lemondrop-backend.herokuapp.com/hats/${itemId}`, 
     {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
